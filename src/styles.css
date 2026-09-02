@@ -153,5 +153,29 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+    background-image:
+      linear-gradient(oklch(1 0 0 / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(1 0 0 / 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 }
+
+@utility font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+@utility pixel-frame {
+  border: 3px solid var(--color-border);
+  box-shadow: var(--shadow-pixel);
+}
+
+@utility pixelated {
+  image-rendering: pixelated;
+}
+
+@utility arcade-glow {
+  background-image: var(--gradient-arcade);
+}
+
